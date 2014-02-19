@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="campus.crime.busters"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- If your application uses, but does not require a camera in order to function, instead set android:required to false. In doing so, Google Play will allow devices without a camera to download your application. It's then your responsibility to check for the availability of the camera at runtime by calling hasSystemFeature(PackageManager.FEATURE_CAMERA). If a camera is not available, you should then disable your camera features. -->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="campus.crime.busters.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="campus.crime.busters.LoginActivity_register"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="campus.crime.busters.LoginActivity_signin"
+            android:label="@string/title_activity_login_activity_signin"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+    </application>
+
+</manifest>
