@@ -41,6 +41,14 @@
             android:orientation="vertical" >
 
             <EditText
+                android:id="@+id/EditText02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName" />
+
+            <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,7 +92,7 @@
               <!--  Sign In -->
             
             <Button
-                android:id="@+id/sign_in_button"
+                android:id="@+id/register_button"
                 android:layout_width="282dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
